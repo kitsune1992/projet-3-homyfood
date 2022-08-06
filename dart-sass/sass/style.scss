@@ -173,6 +173,7 @@ $darkgray-color: #7e7e7e;
 .plat {
 
     &__card {
+        display: flex;
         width: 92%;
         background-color: white;
         align-items: baseline;
@@ -180,6 +181,7 @@ $darkgray-color: #7e7e7e;
         padding: 12px;
         border-radius: 16px;
         @include border-shadow;
+
 
     }
 
@@ -219,9 +221,7 @@ $darkgray-color: #7e7e7e;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
         width: 56px;
-
-
-        margin: -12px -72px -12px 16px;
+       
         @include flex(row, center, center, flex-wrap);
 
 
