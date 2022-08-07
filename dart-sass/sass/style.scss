@@ -14,7 +14,6 @@ a {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 button {
@@ -50,6 +49,9 @@ button {
 
 
 }
+
+/*Keyframes*/
+
 /*Variables*/
 
 //font size//
@@ -72,28 +74,44 @@ $darkgray-color: #7e7e7e;
 
 
 /* COMPOSANTS*/
+/*Loader*/
+
 
 /*boutons*/
 .btn {
-    display: inline-block;
-    margin: 0% 18% 0% 18%;
-
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    padding: 4%;
-    margin-bottom: 9%;
-    margin-top: 9%;
-    border-radius: 35px;
-    font-size: $font-size-min ;
-    @include border-shadow;
-    @include linear-gradient;
-
-    &--cmd {
-        padding: 13px 45px 13px 45px;
-
-
-    }
+  display: inline-block;
+  margin: 0% 18% 0% 18%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  padding: 4%;
+  margin-bottom: 9%;
+  margin-top: 9%;
+  border-radius: 35px;
+  overflow: hidden;
+  font-size: $font-size-min ;
+  @include linear-gradient ;
+  @include border-shadow;
+  cursor: pointer;
+ 
+  -webkit-transition: opacity 1s ;
+  -moz-transition: opacity 1s ;
+  -ms-transition: opacity 1s ;
+  -o-transition: opacity 1s ;
+  transition: opacity 1s ;
+  &:hover
+  {
+          box-shadow: 1px 6px 20px 0px $darkgray-color;
+          -webkit-filter: opacity(80%);
+          filter: opacity(80%);
+      }
+  
+      &--cmd {
+          padding: 13px 45px 13px 45px;
+  
+  
+      }
 }
 
 /*button heart*/
@@ -172,14 +190,22 @@ $darkgray-color: #7e7e7e;
 /*PLats*/
 .plat {
 
+    &__choice {
+        display: flex;
+        @include flex(column, center, normal, nowrap);
+
+    }
+
     &__card {
         display: flex;
         width: 92%;
         background-color: white;
-        align-items: baseline;
-        margin: 16px;
-        padding: 12px;
+        justify-content: space-between;
+        margin-top: 20px;
         border-radius: 16px;
+        height: 70px;
+        overflow: hidden;
+        cursor: pointer;
         @include border-shadow;
 
 
@@ -187,15 +213,18 @@ $darkgray-color: #7e7e7e;
 
 
     &__info {
-        flex: 1;
         overflow: hidden;
         white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 20px 0 0 10px;
+        flex-grow: 1;
     }
 
 
     &__title {
         font-weight: bold;
-        margin-bottom: 5px;
+
+        font-size: large;
 
     }
 
@@ -207,24 +236,43 @@ $darkgray-color: #7e7e7e;
 
 
     &__price {
-        font-weight: 800;
-        margin-top: auto;
-        margin-left: 16px;
+        font-weight: bold;
+        padding: 40px 15px 0 15px;
 
 
     }
 
     &__check {
+        overflow: hidden;
+        text-align: center;
         background: $tertiary-color;
-        color: #FFF;
-        font-size: 20px;
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
         width: 56px;
-       
-        @include flex(row, center, center, flex-wrap);
+        align-items: center;
+        padding-top: 25px;
+        transition: width 2s;
+        -webkit-transition: width 2s;
+        -moz-transition: width 2s;
+        -ms-transition: width 2s;
+        -o-transition: width 2s;
 
+    .checkicon
+{
+            display: inline-block;
+            margin: auto;
+            color: white;
+            font-size: $font-size-max;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
 
+            -webkit-transition: transform 500ms;
+            -moz-transition: transform 500ms;
+            -ms-transition: transform 500ms;
+            -o-transition: transform 500ms;
+            transition: transform 500ms;
+        }
     }
 
 
@@ -267,6 +315,7 @@ $darkgray-color: #7e7e7e;
     padding-left: 8%;
     @include font-size-title;
 }
+
 /*LAYOUT*/
 /* header*/
 .header {
@@ -355,6 +404,7 @@ $darkgray-color: #7e7e7e;
         font-size: $font-size-med;
         color: #353535;
         padding-left: 11%;
+
     }
 
 

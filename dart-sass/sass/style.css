@@ -13,7 +13,6 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 button {
@@ -25,22 +24,37 @@ button {
 
 /*UTILS*/
 /*Mixin*/
+/*Keyframes*/
 /*Variables*/
 /* COMPOSANTS*/
+/*Loader*/
 /*boutons*/
 .btn {
   display: inline-block;
   margin: 0% 18% 0% 18%;
   text-align: center;
+  letter-spacing: 1px;
   color: white;
   font-weight: 400;
   padding: 4%;
   margin-bottom: 9%;
   margin-top: 9%;
   border-radius: 35px;
+  overflow: hidden;
   font-size: 16px;
-  box-shadow: 0px 3px 12px 0px #c4c3c0;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
+  box-shadow: 0px 3px 12px 0px #c4c3c0;
+  cursor: pointer;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.btn:hover {
+  box-shadow: 1px 6px 20px 0px #7e7e7e;
+  -webkit-filter: opacity(80%);
+  filter: opacity(80%);
 }
 .btn--cmd {
   padding: 13px 45px 13px 45px;
@@ -104,24 +118,36 @@ button {
 }
 
 /*PLats*/
+.plat__choice {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  flex-wrap: nowrap;
+}
 .plat__card {
   display: flex;
   width: 92%;
   background-color: white;
-  align-items: baseline;
-  margin: 16px;
-  padding: 12px;
+  justify-content: space-between;
+  margin-top: 20px;
   border-radius: 16px;
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
   box-shadow: 0px 3px 12px 0px #c4c3c0;
 }
 .plat__info {
-  flex: 1;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 20px 0 0 10px;
+  flex-grow: 1;
 }
 .plat__title {
   font-weight: bold;
-  margin-bottom: 5px;
+  font-size: large;
 }
 .plat__subtitle {
   font-size: 16px;
@@ -129,22 +155,37 @@ button {
   overflow: hidden;
 }
 .plat__price {
-  font-weight: 800;
-  margin-top: auto;
-  margin-left: 16px;
+  font-weight: bold;
+  padding: 40px 15px 0 15px;
 }
 .plat__check {
+  overflow: hidden;
+  text-align: center;
   background: #99E2D0;
-  color: #FFF;
-  font-size: 20px;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
   width: 56px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  flex-wrap: flex-wrap;
+  padding-top: 25px;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -ms-transition: width 2s;
+  -o-transition: width 2s;
+}
+.plat__check .checkicon {
+  display: inline-block;
+  margin: auto;
+  color: white;
+  font-size: 25px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  -o-transition: transform 500ms;
+  transition: transform 500ms;
 }
 
 /*section title*/
