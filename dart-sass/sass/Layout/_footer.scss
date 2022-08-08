@@ -1,0 +1,45 @@
+/* Footer*/
+.footer {
+    background-color: $minegray-color ;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    color: white;
+    @include flex(column, normal, normal, nowrap);
+
+
+
+    &__title {
+        font-family: "shrikhand", cursive;
+        font-size: $font-size-min;
+        color: white;
+        padding-left: 7%;
+
+
+
+    }
+
+    &__content {
+
+        padding-top: 6%;
+        padding-left: 6%;
+        line-height: 26px;
+        @include flex(column, normal, normal, nowrap);
+    }
+
+    &__link {
+
+        color: white;
+        font-size: $font-size-min ;
+        padding-left: 9%;
+        text-align: justify;
+        padding-bottom: 4%;
+
+
+    }
+
+    .footer-icon {
+        padding-right: 2%;
+        font-size: $font-size-min ;
+    }
+
+}

@@ -1,0 +1,160 @@
+
+
+
+
+
+.speech {
+    background-color: $whitegray-color;
+    text-align: center;
+
+    &__content {
+
+        padding-top: 3%;
+        padding-bottom: 4%;
+        @include flex(column, center, center, flex-wrap);
+
+    }
+
+
+    &__title {
+
+        padding: 4%;
+        margin: 1% 0% 0% 3%;
+        @include font-size-title;
+
+    }
+
+
+
+
+
+
+    &__subtitle {
+
+
+        font-size: $font-size-med;
+        font-variant: normal;
+        font-family: "roboto" cursive;
+
+    }
+
+}
+
+.working {
+
+    margin-bottom: 10%;
+
+
+    @include flex (column, normal, center, nowrap);
+
+    &__step {
+        &__content {
+
+            background-color: $whitegray-color;
+
+            margin-bottom: 10%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 5% 0% 5% 0%;
+            border-radius: 18px;
+            @include border-shadow;
+            @include flex (row, center, normal, flex-wrap);
+
+        }
+
+        &__num {
+            position: relative;
+            background-color: $primary-color ;
+            color: white;
+            width: 8%;
+            height: 3%;
+            margin-left: -3%;
+            margin-right: 6%;
+            padding: 1%;
+            border-radius: 50%;
+            @include flex(row, normal, center, nowrap);
+
+
+        }
+
+        &__icon {
+            margin-right: 6%;
+            color: $darkgray-color;
+        }
+
+        &__choice {
+            font-weight: bold;
+            font-size: $font-size-min;
+        }
+    }
+}
+
+
+
+.restaurant {
+    background-color: $whitegray-color;
+    padding: 1%;
+
+    &__card {
+
+        width: 85%;
+        height: 230px;
+        border-radius: 20px 20px 20px 20px;
+        margin-bottom: 10%;
+        margin-left: 7%;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        @include border-shadow;
+
+
+
+        &__img {
+            width: 100%;
+            height: 71%;
+            object-fit: cover;
+            border-radius: 20px 20px 0px 0px;
+
+        }
+
+        &__content {
+
+            padding-left: 4%;
+            padding-top: 2%;
+            @include flex(row, baseline, space-between, flex-wrap);
+
+
+
+        }
+
+        &__link:link {
+            color: black;
+        }
+
+        &__text {
+
+            color: black;
+            line-height: 22px;
+        }
+
+        &__name {
+            font-weight: bold;
+        }
+
+
+        &__grab {
+
+            background-color: $tertiary-color ;
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            border-radius: 2px;
+            padding: 2%;
+            margin: 2%;
+            color: $deepsea-color ;
+            font-weight: 600;
+            font-size: 12px;
+
+        }
+    }
+}

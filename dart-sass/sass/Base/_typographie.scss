@@ -1,0 +1,24 @@
+/*bases*/
+
+h1 h2,
+h3,
+p,
+a,
+span,
+input,
+link {
+    font-family: "Roboto";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0%;
+}

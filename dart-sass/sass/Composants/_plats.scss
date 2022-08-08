@@ -1,0 +1,91 @@
+/*PLats*/
+.plat {
+
+    &__choice {
+        display: flex;
+        @include flex(column, center, normal, nowrap);
+
+    }
+
+    &__card {
+        display: flex;
+        width: 92%;
+        background-color: white;
+        justify-content: space-between;
+        margin-top: 20px;
+        border-radius: 16px;
+        height: 70px;
+        overflow: hidden;
+        cursor: pointer;
+        @include border-shadow;
+
+
+    }
+
+
+    &__info {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 20px 0 0 10px;
+        flex-grow: 1;
+    }
+
+
+    &__title {
+        font-weight: bold;
+
+        font-size: large;
+
+    }
+
+    &__subtitle {
+        font-size: $font-size-min ;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+    &__price {
+        font-weight: bold;
+        padding: 40px 15px 0 15px;
+
+
+    }
+
+    &__check {
+        overflow: hidden;
+        text-align: center;
+        background: $tertiary-color;
+        width: 0;
+        align-items: center;
+        padding-top: 25px;
+       
+        -webkit-transition: width 2s;
+        -moz-transition: width 2s;
+        -ms-transition: width 2s;
+        -o-transition: width 2s;
+        transition: width 2s;
+
+    .checkicon
+{
+            display: inline-block;
+            margin: auto;
+            color: white;
+            font-size: $font-size-max;
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+
+            -webkit-transition: transform 500ms;
+            -moz-transition: transform 500ms;
+            -ms-transition: transform 500ms;
+            -o-transition: transform 500ms;
+            transition: transform 500ms;
+        }
+    }
+
+
+}
