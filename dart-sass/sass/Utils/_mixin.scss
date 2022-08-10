@@ -1,3 +1,5 @@
+@import"./variables";
+
 @mixin border-shadow {
     box-shadow: 0px 3px 12px 0px $shadow-color;
 
@@ -7,18 +9,27 @@
     background: linear-gradient(175deg, $secondary-color, $primary-color);
 }
 
-@mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
-    display: flex;
-    flex-direction: $flex-direction;
-    align-items: $align-items;
-    justify-content: $justify-content;
-    flex-wrap: $flex-wrap;
-}
+@mixin light-linear {
+    background: linear-gradient(
+        175deg,
+            lighten($secondary-color, 2%) 0% ,
+            lighten($secondary-color, 2%) 33%,
+            lighten($primary-color, 2%)100%
+    );
+    }
 
-@mixin font-size-title {
-    font-size: 24px;
-    font-family: "roboto", sans-serif;
-    font-weight: bolder;
+    @mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
+        display: flex;
+        flex-direction: $flex-direction;
+        align-items: $align-items;
+        justify-content: $justify-content;
+        flex-wrap: $flex-wrap;
+    }
+
+    @mixin font-size-title {
+        font-size: 24px;
+        font-family: "roboto", sans-serif;
+        font-weight: bolder;
 
 
-}
+    }

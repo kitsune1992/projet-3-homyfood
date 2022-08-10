@@ -1,7 +1,10 @@
 /*menu*/
 .menu {
+    background-color: $whitegray-color;
+    padding-bottom: 20%;
 
-    padding: 0;
+
+
 
 
     &__picture {
@@ -44,7 +47,7 @@
 
 
     &__plat {
-        margin-bottom: 0%;
+        padding-bottom: 5%;
         background-color: $whitegray-color;
 
 
@@ -54,7 +57,7 @@
 
     &__order {
         text-align: center;
-        margin-bottom: 0%;
+        margin-top: 3%;
 
     }
 

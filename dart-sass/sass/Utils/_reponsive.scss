@@ -1,16 +1,8 @@
-@media all and (min-width:800px) {
-   body {
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      padding: auto;
+/* Responsive*/
+@media (min-width: 767px)
+{
+   .location{
+      margin-left: 0%;
    }
 
-   /*home*/
-   .header {
-      @include flex(column, normal, flex-start, nowrap);
-
-
-   }
 }

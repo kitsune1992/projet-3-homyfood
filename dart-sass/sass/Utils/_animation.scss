@@ -1,0 +1,63 @@
+/*Animation Slide du menu */
+
+.anim {
+
+
+    &-1 {
+        -webkit-transform: translateY(20vw);
+        -moz-transform: translateY(20vw);
+        -ms-transform: translateY(20vw);
+        -o-transform: translateY(20vw);
+        transform: translateY(20vw);
+        -webkit-animation: slide ease-out  2s forwards;
+        animation: slide ease-out  2s forwards;
+        opacity: 0%;
+}
+
+    &-2 {
+        -webkit-transform: translateY(20vw);
+        -moz-transform: translateY(20vw);
+        -ms-transform: translateY(20vw);
+        -o-transform: translateY(20vw);
+        transform: translateY(20vw);
+        -webkit-animation: slide ease-out 2s forwards;
+        animation: slide ease-out 2s forwards;
+        opacity: 0%;
+        animation-delay: 300ms;
+}
+
+    &-3 {
+        -webkit-transform: translateY(20vw);
+        -moz-transform: translateY(20vw);
+        -ms-transform: translateY(20vw);
+        -o-transform: translateY(20vw);
+        transform: translateY(20vw);
+        -webkit-animation: slide ease-out 2s forwards;
+        animation: slide ease-out 2s forwards;
+        opacity: 0%;
+        animation-delay: 600ms;
+}
+}
+    @keyframes slide {
+        0% {
+            opacity: 0%;
+        }
+
+        50% {
+            opacity: 50%;
+        }
+
+        100% {
+            opacity: 100%;
+
+            -webkit-transform: translateY(0vw);
+            -moz-transform: translateY(0vw);
+            -ms-transform: translateY(0vw);
+            -o-transform: translateY(0vw);
+            transform: translateY(0vw);
+        }
+    }
+
+/*Animation menu check*/
+
+

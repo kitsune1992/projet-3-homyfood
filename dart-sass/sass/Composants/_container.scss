@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1% 5% 4% 6%;
+
+    .icon {
+
+        width: 27px;
+        height: 20px;
+    }
+
+    .icon path {
+        fill: transparent;
+        stroke-width: 15;
+        stroke: $minegray-color;
+    }
+}
+
+.icon.heart path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+
+
+
+.icon.heart:hover path {
+
+    -webkit-animation: animate-iconheart 2s linear forwards;
+    animation: animate-iconheart 2s linear forwards;
+
+    @keyframes animate-iconheart {
+        0% {
+            stroke-dashoffset: 0;
+
+
+        }
+
+        0% {
+            stroke-dashoffset: 1560;
+
+        }
+
+        80% {
+            stroke-dashoffset: 3120;
+            fill: transparent;
+        }
+
+        100% {
+            stroke-dashoffset: 3120;
+            fill: url(#gradient)
+        }
+    }
+}
