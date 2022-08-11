@@ -255,30 +255,39 @@ button {
   flex-wrap: nowrap;
   font-weight: bold;
   padding: 10vw 10vw;
+  overflow: hidden;
 }
 .plat__check {
   background: #99E2D0;
-  width: 56px;
-  height: 100%;
+  width: 0;
+  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  transition-duration: 0.5s;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -ms-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.plat__check:hover {
+  width: 70px;
 }
 .plat__check .checkicon {
   display: inline-block;
   margin: auto;
   color: white;
   font-size: 25px;
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-  transition-duration: 0.5s;
+  overflow: hidden;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-ransform: rotateg(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 /*section title*/

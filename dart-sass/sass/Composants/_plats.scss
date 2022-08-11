@@ -2,7 +2,7 @@
 .plat {
 
     &__choice {
-       
+
         @include flex(column, center, normal, nowrap);
 
     }
@@ -19,7 +19,6 @@
         cursor: pointer;
         @include border-shadow;
         white-space: nowrap;
-
 
     }
 
@@ -55,32 +54,46 @@
         @include flex(row, normal, center, nowrap);
         font-weight: bold;
         padding: 10vw 10vw;
+        overflow: hidden;
 
     }
 
     &__check {
         background: $tertiary-color;
-
-        width: 56px;
-        height: 100%;
+        width: 0;
+        position: relative;
         overflow: hidden;
         @include flex(row, center, center, nowrap);
-        transition-duration: .5s;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        -ms-transition: width 1s;
+        -o-transition: width 1s;
+        transition: width 1s;
+
+        &:hover {
+            width: 70px;
+
+
+        }
+
 
         .checkicon {
             display: inline-block;
             margin: auto;
             color: white;
             font-size: $font-size-max;
-        
-            -webkit-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-            transition-duration: .5s;
-}
+            overflow: hidden;
+
+
+
+
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-ransform: rotateg(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
     }
-
-
 }
