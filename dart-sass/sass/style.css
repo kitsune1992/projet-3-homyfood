@@ -131,28 +131,16 @@ button {
   stroke: #353535;
 }
 
-.icon.heart path {
-  stroke-dasharray: 1560;
-  stroke-dashoffset: 0;
-}
-
 .icon.heart:hover path {
-  -webkit-animation: animate-iconheart 2s linear forwards;
-  animation: animate-iconheart 2s linear forwards;
+  -webkit-animation: animate-iconheart 0.1s linear forwards;
+  animation: animate-iconheart 0.1s linear forwards;
+  stroke-opacity: 5%;
 }
 @keyframes animate-iconheart {
   0% {
-    stroke-dashoffset: 0;
-  }
-  0% {
-    stroke-dashoffset: 1560;
-  }
-  80% {
-    stroke-dashoffset: 3120;
     fill: transparent;
   }
   100% {
-    stroke-dashoffset: 3120;
     fill: url(#gradient);
   }
 }
