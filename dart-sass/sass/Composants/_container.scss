@@ -27,14 +27,16 @@
 
     @keyframes animate-iconheart {
         0% {
+            fill: transparent;
 
-          fill: transparent;
+
         }
-        
+
 
         100% {
 
-            fill: url(#gradient)
+            fill: url(#gradient);
+
         }
     }
 }

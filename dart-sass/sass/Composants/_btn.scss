@@ -10,21 +10,25 @@
     overflow: hidden;
     font-size: $font-size-min ;
     width: 200px;
-	height: 50px;
-    
+    height: 50px;
     @include linear-gradient;
     @include border-shadow;
     cursor: pointer;
-
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-
-    &:hover {
+    -webkit-transition: transform .1s;
+    -moz-transition: transform .1s;
+    -ms-transition: transform .1s;
+    -o-transition: transform .1s;
+    transition: transform .1s;
+    &:hover 
+{
         box-shadow: 1px 6px 20px 0px $darkgray-color;
         -webkit-filter: opacity(80%);
         filter: opacity(80%);
-    }
+       
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        transform: scale(1.02);
+}
 }

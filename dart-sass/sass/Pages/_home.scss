@@ -1,8 +1,3 @@
-
-
-
-
-
 .speech {
     background-color: $whitegray-color;
     text-align: center;
@@ -49,16 +44,29 @@
 
     &__step {
         &__content {
-
             background-color: $whitegray-color;
-
             margin-bottom: 10%;
             margin-left: 10%;
             margin-right: 10%;
             padding: 5% 0% 5% 0%;
             border-radius: 18px;
             @include border-shadow;
-            @include flex (row, center, normal, flex-wrap);
+            @include flex(row, center, normal, flex-wrap);
+
+            -webkit-transition: transform .1s;
+            -moz-transition: transform .1s;
+            -ms-transition: transform .1s;
+            -o-transition: transform .1s;
+            transition: transform .1s;
+
+            &:hover {
+                background-color:#EEECF0;
+                -webkit-transform: scale(1.02);
+                -moz-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                -o-transform: scale(1.02);
+                transform: scale(1.02);
+}
 
         }
 
@@ -95,5 +103,5 @@
     background-color: $whitegray-color;
     padding: 1%;
 
- 
+
 }
