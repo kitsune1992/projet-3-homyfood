@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /*Variables*/
-/*Variables*/ /* Responsive*/
+/*animations*/
+/*Variables*/
+/*animations*/
+/* Responsive*/
 @media (min-width: 767px) {
   .location {
     margin-left: 0%;
@@ -39,21 +43,22 @@ button {
   height: 100vh;
   background-color: #f6f6f6;
   opacity: 0.9;
-  -webkit-animation: disappear 1s 5s forwards;
-  animation: disappear 1s 5s forwards;
-  /*animationname,animationduration,animationdelay,animationfillmode*/
-  transform-origin: top;
-  /*AnimationLoader*/
+  -webkit-animation: disappear 200ms 3s forwards;
+  animation: disappear 200ms 3s forwards;
+  /*Disparitiondelaboiteloader*/
+  /*Pseudo élément loader*/
+  /*Animation du pseudo élement */
 }
 @keyframes disappear {
   0% {
-    opacity: 1;
+    overflow: hidden;
   }
   100% {
-    opacity: 0;
+    visibility: hidden;
   }
 }
-.loader__circle {
+.loader::after {
+  content: "";
   border: 16px solid #eaeaea;
   width: 120px;
   height: 120px;
@@ -66,8 +71,8 @@ button {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-animation: loading 2s linear infinite;
-  animation: loading 2s linear infinite;
+  -webkit-animation: loading 3s linear;
+  animation: loading 3s linear;
 }
 @keyframes loading {
   0% {
@@ -76,7 +81,7 @@ button {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    opacity: 1;
+    overflow: hidden;
   }
   50% {
     -webkit-transform: rotate(360deg);
@@ -84,7 +89,6 @@ button {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-    opacity: 0.5;
   }
   100% {
     -webkit-transform: rotate(720deg);
@@ -92,7 +96,7 @@ button {
     -ms-transform: rotate(720deg);
     -o-transform: rotate(720deg);
     transform: rotate(720deg);
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
