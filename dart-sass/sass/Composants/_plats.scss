@@ -20,70 +20,127 @@
         white-space: nowrap;
 
 
+        &:hover &__check {
+            display: flex;
+            animation-delay: 300ms;
+            -webkit-animation: appear 1s ease forwards;
+            animation: appear 1s ease forwards;
+            -webkit-transition: display 2s;
+            -moz-transition: display 2s;
+            -ms-transition: display 2s;
+            -o-transition: display 2s;
+            transition: display 2s;
+        }
 
-    }
+        @keyframes appear {
+            0% {
+                -webkit-transform: translateX(100px);
+                -moz-transform: translateX(100px);
+                -ms-transform: translateX(100px);
+                -o-transform: translateX(100px);
+                transform: translateX(100px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0px);
+                -moz-transform: translateX(0px);
+                -ms-transform: translateX(0px);
+                -o-transform: translateX(0px);
+                transform: translateX(0px);
+            }
+
+        }
+
+        &:hover &__check.checkicon {
+            @keyframes rotation {
+              0% {
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+}
+
+               100% {
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+}
+
+            }
+        }
 
 
-    &__info {
-
-        width: 66vw;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        margin: 11px 0 0 10px;
-        flex-grow: 1;
-    }
-
-
-    &__title {
-        font-weight: bold;
-        font-size: large;
-        margin-bottom: 2%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-    }
-
-    &__subtitle {
-        font-size: $font-size-min ;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-
-    &__price {
-        width: 20px;
-        @include flex(row, normal, center, nowrap);
-        font-weight: bold;
-        padding-top: 10%;
 
 
 
 
-    }
+        &__info {
+
+            width: 66vw;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin: 11px 0 0 10px;
+            flex-grow: 1;
+
+        }
 
 
-    &__check {
-        background-color: $tertiary-color;
-        color: white;
-        overflow: hidden;
-        width: 60px;
-        font-size: $font-size-med;
-        padding: 24px 19px;
-        animation-name: slider;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function:ease-in;
-        animation-fill-mode: forwards;
-        position: relative;
 
-        
-    }
+        &__title {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 2%;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
-    .checkicon {
-        display: inline-block;
-        margin: auto;
-        overflow: hidden;
+        }
+
+        &__subtitle {
+            font-size: $font-size-min ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 3%;
+        }
+
+
+        &__price {
+            width: 30px;
+            font-weight: bold;
+            font-size: 15px;
+            padding-top: 11%;
+            padding-right: 12%;
+            position: relative;
+
+
+
+
+
+
+        }
+
+
+        &__check {
+            position: relative;
+            background-color: $tertiary-color;
+            color: white;
+            display: none;
+            width: 60px;
+            font-size: $font-size-med;
+            padding: 24px 19px;
+
+        }
+
+        .checkicon {
+            display: inline-block;
+            margin: auto;
+            font-size: 25px;
+            -webkit-animation: rotation 1s 300ms forwards;
+            animation: rotation 1s 300ms forwards;
+}
 
     }
 }

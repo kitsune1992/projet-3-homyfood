@@ -21,13 +21,14 @@
 
 
 .icon.heart:hover path {
-    -webkit-animation: animate-iconheart 0.1s linear forwards;
-    animation: animate-iconheart 0.1s linear forwards;
+    -webkit-animation:animate-iconheart 0.1s linear forwards;
+    animation:animate-iconheart 0.1s linear forwards;
     stroke-opacity: 5%;
-
-    @keyframes animate-iconheart {
+            @keyframes animate-iconheart
+{
         0% {
             fill: transparent;
+           
 
 
         }
