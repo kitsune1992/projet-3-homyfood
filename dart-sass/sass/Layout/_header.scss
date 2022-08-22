@@ -6,7 +6,7 @@
 
     &__home{
     @include flex(column, center, normal, nowrap);
-    padding:5% 0% 0% 0%;
+   
     }
 
 
@@ -16,11 +16,12 @@
         justify-content: center;
         border-style: none;
         padding-bottom: 6px;
+        padding-top: 11px;
 
     }
     .location {
         width: 100%;
-        padding: 3%;
+        padding: 7px;
         background: $lightgray-color;
         box-shadow: 0px 3px 3px -1px $shadow-color inset;
     
@@ -31,16 +32,15 @@
             display: inline-block;
             font-size: $font-size-med;
             color: #353535;
-            padding-left: 11%;
+           
     
         }
     
     
         .input {
-            width: 60%;
+           
             border: none;
-            margin-left: 3%;
-            height: 6%;
+    
             text-align: center;
             line-height: 1;
             background: $lightgray-color;

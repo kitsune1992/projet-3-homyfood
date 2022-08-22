@@ -19,4 +19,13 @@ $shadow-color: #c4c3c0;
 $darkgray-color: #7e7e7e;
 
 /*animations*/
-$animation-duration:3s
+$animation-duration: 3s;
+    /*Responsive*/
+  
+    $medium:768px;
+    $medium-up:"only screen and(min-width:#{$medium}) ";
+    $medium-down:"only screen and(max-width:#{$medium}) ";
+
+    $large:1000px;
+    $large-up:"only screen and(min-width:#{$large}) ";
+    $large-down:"only screen and(max-width:#{$large}) ";

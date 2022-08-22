@@ -14,133 +14,140 @@
         margin-top: 20px;
         border-radius: 16px;
         height: 70px;
-        overflow: hidden;
         cursor: pointer;
         @include border-shadow;
         white-space: nowrap;
 
 
-        &:hover &__check {
-            display: flex;
-            animation-delay: 300ms;
-            -webkit-animation: appear 1s ease forwards;
-            animation: appear 1s ease forwards;
-            -webkit-transition: display 2s;
-            -moz-transition: display 2s;
-            -ms-transition: display 2s;
-            -o-transition: display 2s;
-            transition: display 2s;
-        }
+    
 
-        @keyframes appear {
-            0% {
-                -webkit-transform: translateX(100px);
-                -moz-transform: translateX(100px);
-                -ms-transform: translateX(100px);
-                -o-transform: translateX(100px);
-                transform: translateX(100px);
-            }
-
-            100% {
-                -webkit-transform: translateX(0px);
-                -moz-transform: translateX(0px);
-                -ms-transform: translateX(0px);
-                -o-transform: translateX(0px);
-                transform: translateX(0px);
-            }
-
-        }
-
-        &:hover &__check.checkicon {
-            @keyframes rotation {
-              0% {
-                    -webkit-transform: rotate(0deg);
-                    -moz-transform: rotate(0deg);
-                    -ms-transform: rotate(0deg);
-                    -o-transform: rotate(0deg);
-                    transform: rotate(0deg);
+    &:hover &__detail {
+        display: flex;
+        animation-delay: 3s;
+        -webkit-animation: appear 1s ease forwards;
+        animation: appear 1s ease forwards;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -ms-transition: all 2s;
+        -o-transition: all 2s;
+        transition: all 2s;
 }
 
-               100% {
-                    -webkit-transform: rotate(360deg);
-                    -moz-transform: rotate(360deg);
-                    -ms-transform: rotate(360deg);
-                    -o-transform: rotate(360deg);
-                    transform: rotate(360deg);
+    @keyframes appear {
+        0% {
+            -webkit-transform: translateX(100px);
+            -moz-transform: translateX(100px);
+            -ms-transform: translateX(100px);
+            -o-transform: translateX(100px);
+            transform: translateX(100px);
 }
 
-            }
+        100% {
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            -o-transform: translateX(0px);
+            transform: translateX(0px);
         }
-
-
-
-
-
-
-        &__info {
-
-            width: 66vw;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin: 11px 0 0 10px;
-            flex-grow: 1;
-
-        }
-
-
-
-        &__title {
-            font-weight: bold;
-            font-size: large;
-            margin-bottom: 2%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-        }
-
-        &__subtitle {
-            font-size: $font-size-min ;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            padding-right: 3%;
-        }
-
-
-        &__price {
-            width: 30px;
-            font-weight: bold;
-            font-size: 15px;
-            padding-top: 11%;
-            padding-right: 12%;
-            position: relative;
-
-
-
-
-
-
-        }
-
-
-        &__check {
-            position: relative;
-            background-color: $tertiary-color;
-            color: white;
-            display: none;
-            width: 60px;
-            font-size: $font-size-med;
-            padding: 24px 19px;
-
-        }
-
-        .checkicon {
-            display: inline-block;
-            margin: auto;
-            font-size: 25px;
-            -webkit-animation: rotation 1s 300ms forwards;
-            animation: rotation 1s 300ms forwards;
-}
 
     }
+
+    &:hover &__detail.checkicon {
+        @keyframes rotation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+}
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+
+        }
+    }
+
+
+
+
+
+
+    &__info {
+
+     
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 11px 0 0 10px;
+
+    }
+
+
+
+    &__title {
+        font-weight: bold;
+        font-size: large;
+        margin-bottom: 2%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    &__subtitle {
+        font-size: $font-size-min ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 3px;
+    }
+
+    &__detail {
+        display: flex;
+        -webkit-transform: translateX(60px);
+        -moz-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        -o-transform: translateX(60px);
+        transform: translateX(60px);
+}
+
+    &__price {
+        background-color: chartreuse;
+        width: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        padding-top: 39px;
+        padding-right: 41px;
+        position: relative;
+        align-items: baseline;
+
+
+    }
+
+
+    &__check {
+        position: relative;
+        background-color: $tertiary-color;
+        color: white;
+        display: inline-block;
+        width: 60px;
+        font-size: $font-size-med;
+        padding: 24px 19px;
+
+    }
+
+    .checkicon {
+        display: inline-block;
+        margin: auto;
+        font-size: 25px;
+        -webkit-animation: rotation 1s 300ms forwards;
+        animation: rotation 1s 300ms forwards;
+    }
+
+}
+
 }

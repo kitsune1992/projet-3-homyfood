@@ -1,0 +1,38 @@
+@media #{$medium-up} {
+
+    body {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+     
+        margin: 0;
+        padding: 0;
+    }
+
+.header, .speech, .main
+    
+    {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+ 
+
+   
+
+}
+.working__step__num
+{
+   width: 50px!important;
+   height: 50px!important;
+   line-height: 50px!important;
+}
+.working__step__icon{
+    font-size: 30px;
+}
+
+.working__step__choice{
+    font-size:$font-size-max!important;
+}
+
+}
