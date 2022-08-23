@@ -1,11 +1,13 @@
+.main{
+    max-width: 100%;
+}
 .speech {
     background-color: $whitegray-color;
     text-align: center;
 
     &__content {
 
-        padding-top: 3%;
-        padding-bottom: 4%;
+
         @include flex(column, center, center, flex-wrap);
 
     }
@@ -13,9 +15,16 @@
 
     &__title {
 
-        padding: 4%;
-        margin: 1% 0% 0% 3%;
+        padding: 35px 74px 16px 72px;
+
         @include font-size-title;
+        @media #{$medium-up} {
+            font-size:$font-size-big!important;
+            
+
+
+          
+        }
 
     }
 
@@ -27,34 +36,44 @@
     &__subtitle {
 
 
-        font-size: $font-size-med;
+        font-size:$font-size-min;
         font-variant: normal;
-        font-family: "roboto" cursive;
+        font-family: "roboto""cursive";
+        padding: 0px 34px 0px 27px;
+        @media #{$medium-up} {
+            font-size:$font-size-max!important;
+            
 
+
+          
+        }
     }
 
 }
 
 .working {
-
+   
+    background-color: white;
     margin-bottom: 10%;
 
     @include flex (column, normal, center, nowrap);
+    
 
     &__step {
-       
-       
-                
-        
+
+        &:hover &__icon {
+            color: $primary-color;
+        }
+
         &__content {
-           
+
             background-color: $whitegray-color;
             margin-bottom: 26px;
             margin-left: 36px;
             margin-right: 19px;
-            padding: 20px 0px ;
+            padding: 20px 0px;
             border-radius: 18px;
-          cursor: pointer;
+            cursor: pointer;
             @include border-shadow;
             @include flex(row, center, normal, flex-wrap);
 
@@ -65,53 +84,84 @@
             transition: transform .1s;
 
             &:hover {
-                background-color:#EEECF0;
+                background-color: #EEECF0;
                 -webkit-transform: scale(1.02);
                 -moz-transform: scale(1.02);
                 -ms-transform: scale(1.02);
                 -o-transform: scale(1.02);
                 transform: scale(1.02);
-}
 
-}
+            }
+            @media #{$medium-up} {
+                max-width: 500px;
+              align-items: center;
+               
+                 
+ 
+     
+               
+             }
+        }
 
 
         &__num {
             position: relative;
             background-color: $primary-color ;
             color: white;
-            width:30px;
-            height: 30px;
+            width: 27px;
+            height: 27px;
             margin-left: -12px;
             margin-right: 23px;
             line-height: 30px;
             @include flex(row, normal, center, nowrap);
 
             border-radius: 50%;
-}
+            @media #{$medium-up} {
+                width: 47px!important;
+                height: 47px!important;
+                line-height: 50px!important
+
+    
+              
+            }
+        }
 
         &__icon {
-            font-size:$font-size-max ;
+            font-size: 22px;
             margin-right: 23px;
             color: $darkgray-color;
+            @media #{$medium-up} {
+                font-size: 40px;
+                
 
+    
+              
+            }
+            
         }
 
         &__choice {
-           
+
             font-weight: bold;
-            font-size: $font-size-min;
+            font-size: 16px;
+            @media #{$medium-up} {
+               font-size:$font-size-max!important;
+                
+
+    
+              
+            }
         }
     }
-   
-
-
-
-
-.restaurant {
-    background-color: $whitegray-color;
-    padding: 1%;
 
 
 }
-}
+
+
+    .restaurant {
+        background-color: $whitegray-color;
+
+        padding: 1%;
+
+
+    }

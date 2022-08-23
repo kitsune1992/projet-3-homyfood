@@ -27,11 +27,21 @@
 
     font-family: "shrikhand", cursive;
     font-size: $font-size-med;
+
 }
 
 .section__title {
-    margin-bottom: 7%;
-    margin-top: 10%;
-    padding-left: 8%;
+    padding: 55px 0px 33px 25px;
+
     @include font-size-title;
+
+    @media #{$medium-up} {
+        font-size: $font-size-big !important;
+        text-align: center;
+
+
+
+
+    }
+
 }

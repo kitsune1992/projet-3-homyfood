@@ -4,68 +4,86 @@
 
 
 
-    &__home{
-    @include flex(column, center, normal, nowrap);
-   
+    &__home {
+        @include flex(column, center, normal, nowrap);
+
     }
 
 
     &__logo {
 
-
+        width: 145px;
         justify-content: center;
         border-style: none;
-        padding-bottom: 6px;
-        padding-top: 11px;
-
+        padding: 20px 0px 10px 0px;
+        margin: 0px 27px 0px 0px;
+        @media #{$medium-up}{
+            width: 230px;
+        }
     }
+
     .location {
         width: 100%;
-        padding: 7px;
+        padding: 14px 0px 16px 12px;
         background: $lightgray-color;
         box-shadow: 0px 3px 3px -1px $shadow-color inset;
-    
+
         @include flex (row, baseline, center, flex-wrap);
-    
-    
+
+
         &__icon {
             display: inline-block;
             font-size: $font-size-med;
             color: #353535;
-           
+            @media #{$medium-up} {
+                font-size:$font-size-max!important;
+                
+
     
+              
+            }
+
+
         }
-    
-    
+
+
         .input {
-           
+
             border: none;
-    
-            text-align: center;
+
+            padding-left: 10px;
             line-height: 1;
             background: $lightgray-color;
             color: black;
             font-weight: 700;
+            @media #{$medium-up} {
+                font-size:$font-size-med!important;
+                
+
     
+              
+            }
+
         }
     }
 
     &__back {
-        @include flex(row, center,space-between, nowrap);
-        padding:0% 28% 2% 7%;
-        &__arrow{
-            padding-top:4% ;
-           
+        @include flex(row, center, space-between, nowrap);
+        padding: 0% 28% 2% 7%;
+
+        &__arrow {
+            padding-top: 4%;
+
         }
-    
-       &__logo{
-        padding-top: 5%;
-        padding-right: 10%;
+
+        &__logo {
+            padding-top: 5%;
+            padding-right: 10%;
             padding-left: 28%;
-            
-            
+
+
         }
     }
-    
+
 
 }

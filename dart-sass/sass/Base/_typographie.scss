@@ -3,6 +3,17 @@ body{
     margin:0;
     padding:0;
    
+
+@media #{$medium-up} {
+
+    
+        width: auto;
+        display: flex;
+        flex-direction: column;
+     
+        margin: 0;
+        padding: 0;
+    }
 }
 
 h1 h2,

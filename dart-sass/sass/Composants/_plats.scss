@@ -17,6 +17,7 @@
         cursor: pointer;
         @include border-shadow;
         white-space: nowrap;
+        overflow: hidden;
 
 
     
@@ -116,7 +117,7 @@
 }
 
     &__price {
-        background-color: chartreuse;
+       
         width: 30px;
         font-weight: bold;
         font-size: 15px;
