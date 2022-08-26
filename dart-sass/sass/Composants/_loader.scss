@@ -11,22 +11,22 @@
     -webkit-animation: disappear 200ms 3s forwards;
     animation: disappear 200ms 3s forwards;
 
-   /*Disparitiondelaboiteloader*/  
-@keyframes disappear{
+    /*Disparitiondelaboiteloader*/
+    @keyframes disappear {
         0% {
 
-       
+
             overflow: hidden;
         }
 
         100% {
-           
+
             visibility: hidden;
 
         }
     }
 
-/*Pseudo élément loader*/
+    /*Pseudo élément loader*/
     &::after {
         content: "";
         border: 16px solid $lightgray-color;
@@ -56,7 +56,7 @@
             -ms-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             transform: rotate(0deg);
-          overflow: hidden;
+            overflow: hidden;
         }
 
         50% {
@@ -65,7 +65,7 @@
             -ms-transform: rotate(360deg);
             -o-transform: rotate(360deg);
             transform: rotate(360deg);
-          
+
         }
 
         100% {
@@ -74,8 +74,8 @@
             -ms-transform: rotate(720deg);
             -o-transform: rotate(720deg);
             transform: rotate(720deg);
-          
-           visibility: hidden;
+
+            visibility: hidden;
 
         }
     }

@@ -2,9 +2,10 @@
 
 //font size//
 $font-size-min: 16px;
-$font-size-med: 19px;
+$font-size-med: 20px;
 $font-size-max: 25px;
-$font-size-big:35px;
+$font-size-maxi:27px;
+$font-size-extra:35px;
 
 
 //colors//
@@ -23,11 +24,15 @@ $darkgray-color: #7e7e7e;
 /*animations*/
 $animation-duration: 3s;
     /*Responsive*/
-  
+
     $medium:768px;
     $medium-up:"only screen and(min-width:#{$medium}) ";
     $medium-down:"only screen and(max-width:#{$medium}) ";
 
-    $large:1000px;
+    
+
+    $large:1200px;
     $large-up:"only screen and(min-width:#{$large}) ";
     $large-down:"only screen and(max-width:#{$large}) ";
+
+   

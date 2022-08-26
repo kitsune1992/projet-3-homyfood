@@ -1,9 +1,18 @@
-.main{
+.main {
     max-width: 100%;
 }
+
 .speech {
     background-color: $whitegray-color;
     text-align: center;
+
+    @media #{$medium-up} {
+        padding: 10px;
+
+
+
+
+    }
 
     &__content {
 
@@ -18,14 +27,14 @@
         padding: 35px 74px 16px 72px;
 
         @include font-size-title;
+
         @media #{$medium-up} {
-            font-size:$font-size-big!important;
-            
+            font-size: $font-size-maxi!important;
 
 
-          
+
+
         }
-
     }
 
 
@@ -36,30 +45,62 @@
     &__subtitle {
 
 
-        font-size:$font-size-min;
+        font-size: $font-size-min;
         font-variant: normal;
         font-family: "roboto""cursive";
         padding: 0px 34px 0px 27px;
+
         @media #{$medium-up} {
-            font-size:$font-size-max!important;
-            
+            font-size: $font-size-med !important;
 
 
-          
+
+
         }
     }
 
 }
 
 .working {
-   
+
     background-color: white;
-    margin-bottom: 10%;
+    margin-bottom: 40px;
+
 
     @include flex (column, normal, center, nowrap);
-    
+
+    &__section {
+
+        @include flex(column, stretch, normal, normal);
+
+        @media #{$medium-up} {
+            width: 100%;
+
+
+
+
+
+        }
+
+      
+
+        @media #{$large-up} {
+            @include flex(row, stretch, space-between, flex-wrap);
+
+        }
+    }
+
 
     &__step {
+        @media #{$medium-up} {
+            display: flex;
+          justify-content: center;
+
+
+
+
+
+        }
 
         &:hover &__icon {
             color: $primary-color;
@@ -70,7 +111,7 @@
             background-color: $whitegray-color;
             margin-bottom: 26px;
             margin-left: 36px;
-            margin-right: 19px;
+            margin-right: 39px;
             padding: 20px 0px;
             border-radius: 18px;
             cursor: pointer;
@@ -92,15 +133,17 @@
                 transform: scale(1.02);
 
             }
+
             @media #{$medium-up} {
-                max-width: 500px;
-              align-items: center;
-               
-                 
- 
-     
-               
-             }
+min-width: 400px;
+                align-items: center;
+           
+
+
+
+
+
+            }
         }
 
 
@@ -116,13 +159,11 @@
             @include flex(row, normal, center, nowrap);
 
             border-radius: 50%;
-            @media #{$medium-up} {
-                width: 47px!important;
-                height: 47px!important;
-                line-height: 50px!important
 
-    
-              
+            @media #{$medium-up} {
+                width: 37px !important;
+                height: 37px !important;
+                line-height: 40px !important
             }
         }
 
@@ -130,26 +171,31 @@
             font-size: 22px;
             margin-right: 23px;
             color: $darkgray-color;
-            @media #{$medium-up} {
-                font-size: 40px;
-                
 
-    
-              
+            @media #{$medium-up} {
+                font-size: $font-size-max;
+
+
+
+
             }
-            
+
         }
 
         &__choice {
 
             font-weight: bold;
-            font-size: 16px;
-            @media #{$medium-up} {
-               font-size:$font-size-max!important;
-                
+            font-size: $font-size-min;
+            @media #{$medium-up}{
+                font-size: $font-size-med;
+            }
 
-    
-              
+            @media #{$large-up} {
+                font-size: $font-size-med !important;
+
+
+
+
             }
         }
     }
@@ -158,10 +204,9 @@
 }
 
 
-    .restaurant {
-        background-color: $whitegray-color;
-
-        padding: 1%;
+.restaurant {
+    background-color: $whitegray-color;
 
 
-    }
+
+}

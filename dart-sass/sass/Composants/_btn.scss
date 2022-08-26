@@ -31,11 +31,13 @@
         -o-transform: scale(1.02);
         transform: scale(1.02);
 }
-}
-.btn{
+
+
     @media #{$medium-up}{
-        width: 352px;
-        height: 75px;
+        width: 275px;
+        height: 64px;
+        font-size: $font-size-med;
+        margin-top: 40px;
 
     }
 }

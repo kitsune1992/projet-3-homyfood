@@ -7,19 +7,19 @@
     &__home {
         @include flex(column, center, normal, nowrap);
 
+
+
     }
 
 
     &__logo {
-
-        width: 145px;
+        min-width: 130px;
+        max-width: 350px;
         justify-content: center;
         border-style: none;
         padding: 20px 0px 10px 0px;
         margin: 0px 27px 0px 0px;
-        @media #{$medium-up}{
-            width: 230px;
-        }
+
     }
 
     .location {
@@ -31,16 +31,21 @@
         @include flex (row, baseline, center, flex-wrap);
 
 
+
+
+
         &__icon {
             display: inline-block;
             font-size: $font-size-med;
             color: #353535;
-            @media #{$medium-up} {
-                font-size:$font-size-max!important;
-                
 
-    
-              
+            @media #{$large-up} {
+                font-size: $font-size-maxi !important;
+                padding-right: 10px;
+
+
+
+
             }
 
 
@@ -56,12 +61,12 @@
             background: $lightgray-color;
             color: black;
             font-weight: 700;
-            @media #{$medium-up} {
-                font-size:$font-size-med!important;
-                
 
-    
-              
+            @media #{$medium-up} {
+
+                font-size: $font-size-med !important;
+
+
             }
 
         }
