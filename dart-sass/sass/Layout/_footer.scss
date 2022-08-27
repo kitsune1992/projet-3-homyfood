@@ -12,14 +12,16 @@
     }
 
     @media #{$medium-up} {
-        @include flex(row, baseline, space-around, nowrap);
+        @include flex(column, stretch, center, nowrap);
         padding-top: 38px;
+       
 
 
 
     }
     @media #{$max-up}{
   padding-right:190px ;
+  justify-content: space-between;
     }
 
 
@@ -36,10 +38,12 @@
         @media #{$medium-up} {
             font-size: $font-size-max;
             padding-left: 20px;
+            padding-bottom: 20px;
         }
         @media #{$max-up} {
             font-size: $font-size-max;
-            padding-left: 0px;
+            padding-left: 27px;
+           
           
         }
         
@@ -70,7 +74,7 @@
         @media #{$medium-up} {
             display: flex;
             padding-top: 0px;
-            @include flex(row, baseline, space-evenly, nowrap);
+            @include flex(row, baseline, center, wrap);
 
         }
 

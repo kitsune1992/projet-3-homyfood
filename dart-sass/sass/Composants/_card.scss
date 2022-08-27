@@ -5,11 +5,11 @@
         flex-direction: column;
         align-items: center;
 
-        @media #{$medium-up}{
-          @include flex(row, normal, space-around, wrap);
-         
-         }
-         
+        @media #{$medium-up} {
+            @include flex(row, normal, space-around, wrap);
+
+        }
+
 
     }
 
@@ -31,10 +31,10 @@
             margin-bottom: 68px;
 
 
-           
+
 
         }
-        
+
 
 
         &__img {
@@ -77,7 +77,7 @@
             font-weight: bold;
 
             @media #{$medium-up} {
-                font-size: $font-size-med !important;
+                font-size: $font-size-med  !important;
 
 
             }
@@ -85,7 +85,7 @@
 
         &__place {
             @media #{$large-up} {
-                font-size: $font-size-med !important;
+                font-size: $font-size-med  !important;
 
 
 
@@ -100,18 +100,18 @@
 
             background-color: $tertiary-color ;
             position: absolute;
-            top: 10px;
-            right: 8px;
+            top: 13px;
+            right: 12px;
             border-radius: 2px;
-            padding: 8px;
-            margin: 2px;
-
+            padding: 8px 16px 6px 15px;
+text-align: center;
             color: $deepsea-color ;
             font-weight: 600;
             font-size: 12px;
+           
 
             @media #{$medium-up} {
-                font-size: $font-size-med !important;
+                font-size: $font-size-min  !important;
 
 
 
