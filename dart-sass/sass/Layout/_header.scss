@@ -13,15 +13,16 @@
 
 
     &__logo {
-   width: 130px;
+        width: 130px;
         justify-content: center;
         border-style: none;
         padding: 12px 0px 8px 0px;
-        @media #{$medium-up}{
-           width: 200px;
+
+        @media #{$medium-up} {
+            width: 200px;
         }
-      
-        @media #{$large-up}{
+
+        @media #{$large-up} {
             width: 330px;
             padding-top: 30px;
             padding-bottom: 10px;
@@ -47,7 +48,7 @@
             color: #353535;
 
             @media #{$large-up} {
-                font-size: $font-size-maxi !important;
+                font-size: $font-size-maxi  !important;
                 padding-right: 10px;
 
 
@@ -62,40 +63,44 @@
         .input {
 
             border: none;
-font-size:14px;
+            font-size: 14px;
             padding-left: 10px;
             line-height: 1;
             background: $lightgray-color;
             color: black;
             font-weight: 700;
-            @media #{$medium-up}{
+
+            @media #{$medium-up} {
                 font-size: $font-size-med;
             }
-            @media #{$large-up}{
+
+            @media #{$large-up} {
                 font-size: $font-size-max;
             }
 
-           
+
         }
     }
 
     &__back {
         @include flex(row, center, space-around, nowrap);
         padding: 7px 100px 8px 13px;
-        @media #{$medium-up}{
+
+        @media #{$medium-up} {
             justify-content: normal;
 
         }
 
         &__arrow {
-          
+
             padding: 6px 0px 0px 7px;
             font-weight: bolder;
-            @media #{$medium-up}{
-              
-                padding-right: 77px ;
+
+            @media #{$medium-up} {
+
+                padding-right: 77px;
                 padding-left: 30px;
-              
+
             }
 
 
@@ -107,10 +112,10 @@ font-size:14px;
             padding-right: 10px;
             padding-left: 28px;
 
-            @media #{$medium-up}{
+            @media #{$medium-up} {
                 width: 200px;
-                padding: 8px ;
-              
+                padding: 8px;
+
             }
         }
     }
