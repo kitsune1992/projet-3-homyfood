@@ -62,31 +62,43 @@
             color: black;
             font-weight: 700;
 
-            @media #{$medium-up} {
-
-                font-size: $font-size-med !important;
-
-
-            }
-
+           
         }
     }
 
     &__back {
-        @include flex(row, center, space-between, nowrap);
-        padding: 0% 28% 2% 7%;
+        @include flex(row, center, space-around, nowrap);
+        padding: 17px 100px 8px 13px;
+        @media #{$medium-up}{
+            justify-content: normal;
+
+        }
 
         &__arrow {
-            padding-top: 4%;
+          
+            padding: 6px 0px 0px 7px;
+            font-weight: bolder;
+            @media #{$medium-up}{
+              
+                padding-right: 77px ;
+                padding-left: 30px;
+              
+            }
+
 
         }
 
         &__logo {
-            padding-top: 5%;
-            padding-right: 10%;
-            padding-left: 28%;
+            width: 150px;
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-left: 28px;
 
-
+            @media #{$medium-up}{
+                width: 200px;
+                padding: 8px ;
+              
+            }
         }
     }
 

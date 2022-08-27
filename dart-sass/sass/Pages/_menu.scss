@@ -1,7 +1,7 @@
 /*menu*/
 .menu {
     background-color: $whitegray-color;
-    padding-bottom: 20%;
+    padding-bottom: 32px;
 
 
 
@@ -11,7 +11,7 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
-        position: relative;
+      
         z-index: 1;
         background-color: white;
     }
@@ -20,26 +20,44 @@
         background-color: $whitegray-color;
         z-index: 2;
         border-radius: 40px 40px 0px 0px;
-        margin-top: -16%;
+        margin-top: -52px;
         position: relative;
-        padding: 0%;
+      
         @include flex(row, baseline, space-around, flex-wrap);
+        @media #{$medium-up}{
+         justify-content: space-between;
+         padding-left: 40px;
+          
+        }
+       
+        @media #{$max-up}{
+            padding: 36px 0 25px 61px;
+        }
     }
 
 
     &__heading {
 
-        padding: 7% 0% 5% 0%;
+        padding: 36px 0 25px 0;
+
+       
 
     }
 
 
     &__title {
         font-family: "shrikhand", cursive;
-        font-size: $font-size-max;
-      
+        font-size: $font-size-med;
+        @media #{$mini-up}{
+            font-size: $font-size-max;
+        }
 
-
+        @media #{$large-down}{
+            font-size: $font-size-maxi;
+        }
+        @media #{$large-up}{
+            font-size: $font-size-extra;
+        }
 
     }
 
@@ -48,7 +66,7 @@
 
 
     &__plat {
-        padding-bottom: 5%;
+        padding-bottom: 30px;
         background-color: $whitegray-color;
 
 

@@ -24,6 +24,10 @@ $darkgray-color: #7e7e7e;
 /*animations*/
 $animation-duration: 3s;
     /*Responsive*/
+    $mini:290px;
+    $mini-up:"only screen and(min-width:#{$mini})";
+    $mini-down:"only screen and(max-width:#{$mini})";
+
 
     $medium:768px;
     $medium-up:"only screen and(min-width:#{$medium}) ";
@@ -31,8 +35,10 @@ $animation-duration: 3s;
 
     
 
-    $large:1200px;
+    $large:1000px;
     $large-up:"only screen and(min-width:#{$large}) ";
     $large-down:"only screen and(max-width:#{$large}) ";
 
-   
+   $max:1400px;
+   $max-up:"only screen and(min-width:#{$max}) ";
+    $max-down:"only screen and(max-width:#{$max}) ";
