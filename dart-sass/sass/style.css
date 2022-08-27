@@ -138,7 +138,6 @@ button {
     width: 275px;
     height: 64px;
     font-size: 20px;
-    margin-top: 40px;
   }
 }
 
@@ -422,12 +421,22 @@ button {
   flex-wrap: nowrap;
 }
 .header__logo {
-  min-width: 130px;
-  max-width: 350px;
+  width: 130px;
   justify-content: center;
   border-style: none;
-  padding: 20px 0px 10px 0px;
-  margin: 0px 27px 0px 0px;
+  padding: 12px 0px 8px 0px;
+}
+@media only screen and (min-width:768px) {
+  .header__logo {
+    width: 200px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .header__logo {
+    width: 330px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
 }
 .header .location {
   width: 100%;
@@ -453,11 +462,22 @@ button {
 }
 .header .location .input {
   border: none;
+  font-size: 14px;
   padding-left: 10px;
   line-height: 1;
   background: #eaeaea;
   color: black;
   font-weight: 700;
+}
+@media only screen and (min-width:768px) {
+  .header .location .input {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .header .location .input {
+    font-size: 25px;
+  }
 }
 .header__back {
   display: flex;
@@ -465,7 +485,7 @@ button {
   align-items: center;
   justify-content: space-around;
   flex-wrap: nowrap;
-  padding: 17px 100px 8px 13px;
+  padding: 7px 100px 8px 13px;
 }
 @media only screen and (min-width:768px) {
   .header__back {
@@ -670,7 +690,7 @@ button {
 
 .working {
   background-color: white;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: normal;
@@ -836,14 +856,14 @@ button {
   font-family: "shrikhand", cursive;
   font-size: 20px;
 }
-@media only screen and (min-width:290px) {
+@media only screen and (max-width:290px) {
   .menu__title {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
-@media only screen and (max-width:1000px) {
+@media only screen and (min-width:768px) {
   .menu__title {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width:1000px) {

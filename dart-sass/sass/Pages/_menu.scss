@@ -48,13 +48,13 @@
     &__title {
         font-family: "shrikhand", cursive;
         font-size: $font-size-med;
-        @media #{$mini-up}{
+        @media #{$mini-down}{
+            font-size: $font-size-med;
+        }
+        @media #{$medium-up}{
             font-size: $font-size-max;
         }
-
-        @media #{$large-down}{
-            font-size: $font-size-maxi;
-        }
+      
         @media #{$large-up}{
             font-size: $font-size-extra;
         }

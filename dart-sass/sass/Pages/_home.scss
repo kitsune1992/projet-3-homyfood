@@ -64,7 +64,7 @@
 .working {
 
     background-color: white;
-    margin-bottom: 40px;
+   padding-bottom: 40px;
 
 
     @include flex (column, normal, center, nowrap);

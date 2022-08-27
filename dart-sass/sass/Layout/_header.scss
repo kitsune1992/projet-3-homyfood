@@ -13,12 +13,19 @@
 
 
     &__logo {
-        min-width: 130px;
-        max-width: 350px;
+   width: 130px;
         justify-content: center;
         border-style: none;
-        padding: 20px 0px 10px 0px;
-        margin: 0px 27px 0px 0px;
+        padding: 12px 0px 8px 0px;
+        @media #{$medium-up}{
+           width: 200px;
+        }
+      
+        @media #{$large-up}{
+            width: 330px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
 
     }
 
@@ -55,12 +62,18 @@
         .input {
 
             border: none;
-
+font-size:14px;
             padding-left: 10px;
             line-height: 1;
             background: $lightgray-color;
             color: black;
             font-weight: 700;
+            @media #{$medium-up}{
+                font-size: $font-size-med;
+            }
+            @media #{$large-up}{
+                font-size: $font-size-max;
+            }
 
            
         }
@@ -68,7 +81,7 @@
 
     &__back {
         @include flex(row, center, space-around, nowrap);
-        padding: 17px 100px 8px 13px;
+        padding: 7px 100px 8px 13px;
         @media #{$medium-up}{
             justify-content: normal;
 
