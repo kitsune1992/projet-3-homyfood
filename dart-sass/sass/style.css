@@ -473,9 +473,8 @@ button {
 .header .location .input {
   border: none;
   font-size: 14px;
-  padding-left: 10px;
+  background-color: transparent;
   line-height: 1;
-  background: #eaeaea;
   color: black;
   font-weight: 700;
 }
