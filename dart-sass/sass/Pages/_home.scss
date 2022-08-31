@@ -17,7 +17,7 @@
     &__content {
 
 
-        @include flex(column, center, center, flex-wrap);
+        @include flex(column, center, center,wrap);
 
     }
 
@@ -47,7 +47,7 @@
 
         font-size: $font-size-min;
         font-variant: normal;
-        font-family: "roboto""cursive";
+        font-family: "roboto";
         padding: 0px 34px 0px 27px;
 
         @media #{$medium-up} {
@@ -71,7 +71,7 @@
 
     &__section {
 
-        @include flex(column, stretch, normal, normal);
+        @include flex(column, stretch, normal, nowrap);
 
         @media #{$medium-up} {
             width: 100%;
@@ -85,7 +85,7 @@
       
 
         @media #{$large-up} {
-            @include flex(row, stretch, space-around, flex-wrap);
+            @include flex(row, stretch, space-around, wrap);
 
         }
     }
@@ -116,7 +116,7 @@
             border-radius: 18px;
             cursor: pointer;
             @include border-shadow;
-            @include flex(row, center, normal, flex-wrap);
+            @include flex(row, center, normal, wrap);
 
             -webkit-transition: transform .1s;
             -moz-transition: transform .1s;

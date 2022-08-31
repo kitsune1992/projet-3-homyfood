@@ -36,7 +36,7 @@
         background: $lightgray-color;
         box-shadow: 0px 3px 3px -1px $shadow-color inset;
 
-        @include flex (row, baseline, center, flex-wrap);
+        @include flex (row, baseline, center, wrap);
 
 
 

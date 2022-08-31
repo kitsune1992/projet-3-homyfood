@@ -34,7 +34,7 @@
 
 
         }
-
+       
 
 
         &__img {
@@ -49,7 +49,7 @@
 
             padding-left: 17px;
             padding-top: 5px;
-            @include flex(row, stretch, space-between, flex-wrap);
+            @include flex(row, stretch, space-between, wrap);
 
 
 
@@ -60,9 +60,12 @@
         }
 
         &__text {
-
+            display: flex;
+            flex-direction: column;
+font-size:$font-size-med ;
             color: black;
             line-height: 22px;
+            padding: 7px 0 0px 18px;
 
             @media #{$medium-up} {
                 line-height: 25px;
@@ -73,22 +76,13 @@
             }
         }
 
-        &__name {
-            font-weight: bold;
-
-            @media #{$medium-up} {
-                font-size: $font-size-med  !important;
 
 
-            }
-        }
 
         &__place {
+            font-weight: lighter;
             @media #{$large-up} {
                 font-size: $font-size-med  !important;
-
-
-
 
             }
 
@@ -104,11 +98,11 @@
             right: 12px;
             border-radius: 2px;
             padding: 8px 16px 6px 15px;
-text-align: center;
+            text-align: center;
             color: $deepsea-color ;
             font-weight: 600;
             font-size: 12px;
-           
+
 
             @media #{$medium-up} {
                 font-size: $font-size-min  !important;
