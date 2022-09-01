@@ -1,29 +1,45 @@
 .container {
-    position: relative;
-  
+
+
 
     display: flex;
     flex-direction: column;
     padding: 3px 13px 0 0;
 
     .icon {
-        position: relative;
-        top: -41px;
-        left: 270px;
+        position: absolute;
+        top: 183px;
+        left: 262px;
         width: 27px;
         height: 20px;
-        @media #{$large-up} {
-          left:440px;
-    
-        }
-        @media #{$max-up} {
-           display: none;
-      
-          }
 
-       
+
+        @media #{$large-up} {
+
+            left: 400px;
+
+        }
+
+        @media #{$max-up} {
+
+            display: none;
+        }
+
+
+
+
 
     }
+
+    .icon--pages {
+
+        position: initial;
+        padding-left: 28px;
+
+
+    }
+
+
 
     .icon path {
         fill: transparent;
@@ -31,15 +47,6 @@
         stroke: $minegray-color;
     }
 
-    @media #{$medium-up} {
-        padding-right: 50px;
-
-    }
-
-    @media #{$large-up} {
-        padding-right: 90px;
-
-    }
 
 
 }

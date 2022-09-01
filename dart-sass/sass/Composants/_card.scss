@@ -74,6 +74,13 @@ font-size:$font-size-med ;
 
 
             }
+            @media #{$large-up} {
+             padding-left: 35px;
+
+
+
+
+            }
         }
 
 

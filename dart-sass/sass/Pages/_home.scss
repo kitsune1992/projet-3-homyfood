@@ -85,7 +85,7 @@
       
 
         @media #{$large-up} {
-            @include flex(row, stretch, space-around, wrap);
+            @include flex(row, stretch, space-around, nowrap);
 
         }
     }

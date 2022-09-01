@@ -27,12 +27,12 @@
 
         @media #{$medium-up} {
             justify-content: space-between;
-            padding-left: 40px;
+            padding: 0px 75px 0px 47px;
 
         }
 
         @media #{$max-up} {
-            padding: 36px 0 25px 61px;
+            padding: 36px 108px 25px 61px;
         }
     }
 

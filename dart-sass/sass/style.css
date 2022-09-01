@@ -142,21 +142,20 @@ button {
 }
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding: 3px 13px 0 0;
 }
 .container .icon {
-  position: relative;
-  top: -41px;
-  left: 270px;
+  position: absolute;
+  top: 183px;
+  left: 262px;
   width: 27px;
   height: 20px;
 }
 @media only screen and (min-width:1000px) {
   .container .icon {
-    left: 440px;
+    left: 400px;
   }
 }
 @media only screen and (min-width:1400px) {
@@ -164,20 +163,14 @@ button {
     display: none;
   }
 }
+.container .icon--pages {
+  position: initial;
+  padding-left: 28px;
+}
 .container .icon path {
   fill: transparent;
   stroke-width: 15;
   stroke: #353535;
-}
-@media only screen and (min-width:768px) {
-  .container {
-    padding-right: 50px;
-  }
-}
-@media only screen and (min-width:1000px) {
-  .container {
-    padding-right: 90px;
-  }
 }
 
 .icon.heart:hover path {
@@ -255,6 +248,11 @@ button {
 @media only screen and (min-width:768px) {
   .restaurant__card__text {
     line-height: 25px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .restaurant__card__text {
+    padding-left: 35px;
   }
 }
 .restaurant__card__place {
@@ -738,7 +736,7 @@ button {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 @media only screen and (min-width:768px) {
@@ -864,12 +862,12 @@ button {
 @media only screen and (min-width:768px) {
   .menu__content {
     justify-content: space-between;
-    padding-left: 40px;
+    padding: 0px 75px 0px 47px;
   }
 }
 @media only screen and (min-width:1400px) {
   .menu__content {
-    padding: 36px 0 25px 61px;
+    padding: 36px 108px 25px 61px;
   }
 }
 .menu__heading {
