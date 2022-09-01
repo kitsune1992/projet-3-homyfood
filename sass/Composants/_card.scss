@@ -34,7 +34,7 @@
 
 
         }
-       
+
 
 
         &__img {
@@ -50,9 +50,6 @@
             padding-left: 17px;
             padding-top: 5px;
             @include flex(row, stretch, space-between, wrap);
-
-
-
         }
 
         &__link:link {
@@ -62,7 +59,7 @@
         &__text {
             display: flex;
             flex-direction: column;
-font-size:$font-size-med ;
+            font-size: $font-size-min ;
             color: black;
             line-height: 22px;
             padding: 7px 0 0px 18px;
@@ -70,24 +67,18 @@ font-size:$font-size-med ;
             @media #{$medium-up} {
                 line-height: 25px;
 
-
-
-
             }
+
             @media #{$large-up} {
-             padding-left: 35px;
-
-
-
+                padding-left: 35px
 
             }
         }
 
-
-
-
         &__place {
             font-weight: lighter;
+            font-size: $font-size-min;
+
             @media #{$large-up} {
                 font-size: $font-size-med  !important;
 
@@ -95,7 +86,6 @@ font-size:$font-size-med ;
 
 
         }
-
 
         &__grab {
 
@@ -113,9 +103,6 @@ font-size:$font-size-med ;
 
             @media #{$medium-up} {
                 font-size: $font-size-min  !important;
-
-
-
 
             }
 

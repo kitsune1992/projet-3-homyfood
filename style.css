@@ -16,6 +16,7 @@ h3,
 p,
 a,
 span,
+strong,
 input,
 link {
   font-family: "Roboto";
@@ -165,7 +166,6 @@ button {
 }
 .container .icon--pages {
   position: initial;
-  padding-left: 28px;
 }
 .container .icon path {
   fill: transparent;
@@ -240,7 +240,7 @@ button {
 .restaurant__card__text {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   line-height: 22px;
   padding: 7px 0 0px 18px;
@@ -257,6 +257,7 @@ button {
 }
 .restaurant__card__place {
   font-weight: lighter;
+  font-size: 16px;
 }
 @media only screen and (min-width:1000px) {
   .restaurant__card__place {
@@ -856,7 +857,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 @media only screen and (min-width:768px) {
@@ -871,11 +872,12 @@ button {
   }
 }
 .menu__heading {
-  padding: 36px 0 25px 0;
+  font-size: 20px;
+  padding: 36px 42px 25px 0px;
 }
 .menu__title {
   font-family: "shrikhand", cursive;
-  font-size: 20px;
+  font-size: 25px;
 }
 @media only screen and (max-width:290px) {
   .menu__title {
@@ -884,7 +886,7 @@ button {
 }
 @media only screen and (min-width:768px) {
   .menu__title {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width:1000px) {
