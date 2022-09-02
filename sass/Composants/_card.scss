@@ -27,12 +27,17 @@
         @media #{$medium-up} {
             width: 39%;
 
-            max-height: 300px;
+         height: 300px;
             margin-bottom: 68px;
 
 
 
 
+        }
+        @media #{$large-up}{
+            width:22%;
+         
+    
         }
 
 
@@ -59,7 +64,7 @@
         &__text {
             display: flex;
             flex-direction: column;
-            font-size: $font-size-min ;
+            font-size: $font-size-med;
             color: black;
             line-height: 22px;
             padding: 7px 0 0px 18px;
@@ -68,11 +73,12 @@
                 line-height: 25px;
 
             }
-
-            @media #{$large-up} {
-                padding-left: 35px
+            @media #{$max-up} {
+               padding:15px 9px 0px 29px;
+               font-size:23px ;
 
             }
+          
         }
 
         &__place {

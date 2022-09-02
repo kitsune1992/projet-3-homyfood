@@ -50,16 +50,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     }
 
     &__content {
@@ -77,8 +67,11 @@
             @include flex(row, baseline, center, wrap);
 
         }
+        @media #{$max-up} {
+            padding-left:150px;
+          justify-content: space-evenly;
 
-
+        }
 
 
 

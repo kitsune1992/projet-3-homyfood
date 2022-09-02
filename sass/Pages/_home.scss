@@ -76,18 +76,20 @@
         @media #{$medium-up} {
             width: 100%;
 
-
-
-
-
         }
 
-      
+
 
         @media #{$large-up} {
             @include flex(row, stretch, space-around, nowrap);
 
         }
+
+        @media #{$max-up} {
+            @include flex(row, stretch, space-between, nowrap);
+
+        }
+    
     }
 
 

@@ -134,7 +134,7 @@ button {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .btn {
     width: 275px;
     height: 64px;
@@ -142,17 +142,33 @@ button {
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 3px 13px 0 0;
-}
 .container .icon {
   position: absolute;
   top: 183px;
   left: 262px;
   width: 27px;
   height: 20px;
+}
+@media only screen and (min-width:270px) {
+  .container .icon {
+    top: 178px;
+  }
+}
+@media only screen and (min-width:700px) {
+  .container .icon {
+    top: 227px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .container .icon {
+    left: 193px;
+  }
+}
+@media only screen and (min-width:1400px) {
+  .container .icon {
+    top: 237px;
+    left: 364px;
+  }
 }
 .container .icon--pages {
   position: initial;
@@ -183,7 +199,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .restaurant__section {
     display: flex;
     flex-direction: row;
@@ -202,11 +218,16 @@ button {
   position: relative;
   box-shadow: 0px 3px 12px 0px #c4c3c0;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .restaurant__card {
     width: 39%;
-    max-height: 300px;
+    height: 300px;
     margin-bottom: 68px;
+  }
+}
+@media only screen and (min-width:1000px) {
+  .restaurant__card {
+    width: 22%;
   }
 }
 .restaurant__card__img {
@@ -230,19 +251,20 @@ button {
 .restaurant__card__text {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 20px;
   color: black;
   line-height: 22px;
   padding: 7px 0 0px 18px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .restaurant__card__text {
     line-height: 25px;
   }
 }
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:1400px) {
   .restaurant__card__text {
-    padding-left: 35px;
+    padding: 15px 9px 0px 29px;
+    font-size: 23px;
   }
 }
 .restaurant__card__place {
@@ -266,7 +288,7 @@ button {
   font-weight: 600;
   font-size: 12px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .restaurant__card__grab {
     font-size: 16px !important;
   }
@@ -416,7 +438,7 @@ button {
   font-family: "roboto", sans-serif;
   font-weight: bolder;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .section__title {
     font-size: 27px !important;
     padding-bottom: 43px;
@@ -437,7 +459,7 @@ button {
   border-style: none;
   padding: 12px 0px 8px 0px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .header__logo {
     width: 200px;
   }
@@ -479,7 +501,7 @@ button {
   color: black;
   font-weight: 700;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .header .location .input {
     font-size: 20px;
   }
@@ -497,7 +519,7 @@ button {
   flex-wrap: nowrap;
   padding: 7px 100px 8px 13px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .header__back {
     justify-content: normal;
   }
@@ -506,7 +528,7 @@ button {
   padding: 6px 0px 0px 7px;
   font-weight: bolder;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .header__back__arrow {
     padding-right: 77px;
     padding-left: 30px;
@@ -518,7 +540,7 @@ button {
   padding-right: 10px;
   padding-left: 28px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .header__back__logo {
     width: 200px;
     padding: 8px;
@@ -533,7 +555,7 @@ button {
   color: white;
   line-height: 22px;
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:700px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -542,7 +564,7 @@ button {
     flex-wrap: nowrap;
   }
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -564,7 +586,7 @@ button {
   color: white;
   padding-left: 27px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .footer__title {
     font-size: 25px;
     padding-left: 20px;
@@ -585,7 +607,7 @@ button {
   justify-content: normal;
   flex-wrap: nowrap;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .footer__content {
     display: flex;
     padding-top: 0px;
@@ -594,6 +616,12 @@ button {
     align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width:1400px) {
+  .footer__content {
+    padding-left: 150px;
+    justify-content: space-evenly;
   }
 }
 .footer__content__link {
@@ -615,7 +643,7 @@ button {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .footer__content__link {
     padding-left: 11px;
     text-indent: 1px;
@@ -645,7 +673,7 @@ button {
   padding-right: 2px;
   font-size: 16px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .footer__content .footer-icon {
     font-size: 20px;
     padding-right: 6px;
@@ -665,7 +693,7 @@ button {
   background-color: #f6f6f6;
   text-align: center;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .speech {
     padding: 10px;
   }
@@ -683,7 +711,7 @@ button {
   font-family: "roboto", sans-serif;
   font-weight: bolder;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .speech__title {
     font-size: 27px !important;
   }
@@ -694,7 +722,7 @@ button {
   font-family: "roboto";
   padding: 0px 34px 0px 27px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .speech__subtitle {
     font-size: 20px !important;
   }
@@ -716,7 +744,7 @@ button {
   justify-content: normal;
   flex-wrap: nowrap;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .working__section {
     width: 100%;
   }
@@ -730,7 +758,16 @@ button {
     flex-wrap: nowrap;
   }
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:1400px) {
+  .working__section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width:700px) {
   .working__step {
     display: flex;
     justify-content: center;
@@ -767,7 +804,7 @@ button {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .working__step__content {
     min-width: 400px;
     align-items: center;
@@ -789,7 +826,7 @@ button {
   flex-wrap: nowrap;
   border-radius: 50%;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .working__step__num {
     width: 37px !important;
     height: 37px !important;
@@ -801,7 +838,7 @@ button {
   margin-right: 23px;
   color: #7e7e7e;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .working__step__icon {
     font-size: 25px;
   }
@@ -810,7 +847,7 @@ button {
   font-weight: bold;
   font-size: 16px;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .working__step__choice {
     font-size: 20px;
   }
@@ -850,7 +887,7 @@ button {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .menu__content {
     justify-content: space-between;
     padding: 0px 75px 0px 47px;
@@ -869,12 +906,12 @@ button {
   font-family: "shrikhand", cursive;
   font-size: 25px;
 }
-@media only screen and (max-width:290px) {
+@media only screen and (max-width:270px) {
   .menu__title {
     font-size: 20px;
   }
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:700px) {
   .menu__title {
     font-size: 20px;
   }

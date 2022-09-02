@@ -1,24 +1,45 @@
 .container {
 
 
-
-    display: flex;
-    flex-direction: column;
-    padding: 3px 13px 0 0;
-
     .icon {
         position: absolute;
         top: 183px;
         left: 262px;
         width: 27px;
         height: 20px;
+        @media #{$mini-up} {
+
+            top: 178px;
+
+        }
+
+        @media #{$medium-up} {
+
+            top: 227px;
+
+        }
+
+
+        @media #{$large-up} {
+
+            left: 193px;
+
+        }
+
+        @media #{$max-up} {
+            top: 237px;
+            left: 364px;
+
+
+        }
+
     }
 
     .icon--pages {
 
         position: initial;
 
-    
+
 
 
     }
