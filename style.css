@@ -154,16 +154,6 @@ button {
   width: 27px;
   height: 20px;
 }
-@media only screen and (min-width:1000px) {
-  .container .icon {
-    left: 400px;
-  }
-}
-@media only screen and (min-width:1400px) {
-  .container .icon {
-    display: none;
-  }
-}
 .container .icon--pages {
   position: initial;
 }

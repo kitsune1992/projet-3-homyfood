@@ -23,7 +23,7 @@
         margin-top: -52px;
         position: relative;
 
-        @include flex(row, baseline, space-evenly,wrap);
+        @include flex(row, baseline, space-evenly, wrap);
 
         @media #{$medium-up} {
             justify-content: space-between;
